@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>基本概念</title>
+		<style>
+			*{
+				margin:0;
+				padding: 0;
+			}
+			.box{
+				width:500px;
+				height:200px;
+				display: flex;
+			}
+			.item{
+				width:100px;
+				height: 100px;
+				background-color: red;
+			}
+			.item_s{
+				width:100px;
+				background-color: red;
+			}
+			/*align-items: flex-start;*/
+			.first{
+				position: absolute;
+				top:0;
+				align-items: flex-start;
+				background-color: #00C78C;
+			}
+			/*align-items: flex-end;*/
+			.second{
+				position: absolute;
+				top:300px;
+				align-items: flex-end;
+				background-color: #9933FA;
+			}
+			/*align-items: center;*/
+			.third{
+				position: absolute;
+				top:600px;
+				align-items: center;
+				background-color: #A020F0;
+			}
+			/*align-items: baseline;*/
+			.forth{
+				position: absolute;
+				top:900px;
+				align-items: baseline;
+				background-color: #8A2BE2;
+			}
+			/*align-items: stretch;*/
+			.fifth{
+				position: absolute;
+				top:1200px;
+				align-items: stretch;
+				background-color: #BC8F8F;
+			}
+			.font12{
+				font-size: 12px;
+			}
+			.font24{
+				font-size: 24px;
+			}
+			.font36{
+				font-size: 36px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--justify-content: flex-start;-->
+		<div class="box first">
+			<div class="item">i am first item</div>
+			<div class="item">i am second item</div>
+			<div class="item">i am third item</div>
+		</div>
+		<!--align-items: flex-end;-->
+		<div class="box second">
+			<div class="item">i am first item</div>
+			<div class="item">i am second item</div>
+			<div class="item">i am third item</div>
+		</div>
+		<!--align-items: center;-->
+		<div class="box third">
+			<div class="item">i am first item</div>
+			<div class="item">i am second item</div>
+			<div class="item">i am third item</div>
+		</div>
+		<!--align-items: baseline;-->
+		<div class="box forth">
+			<div class="item font12">i am first item</div>
+			<div class="item font24">i am second item</div>
+			<div class="item font36">i am third item</div>
+		</div>
+		<!--align-items: stretch;-->
+		<div class="box fifth">
+			<div class="item_s">i am first item</div>
+			<div class="item_s">i am second item</div>
+			<div class="item_s">i am third item</div>
+		</div>
+
+	</body>
+</html>

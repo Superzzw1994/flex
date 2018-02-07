@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>flex=wrap</title>
+		<style>
+			*{
+				margin:0;
+				padding: 0;
+			}
+			.box{
+				width:200px;
+				height:200px;
+				display: flex;
+			}
+			.item{
+				width:100px;
+				height: 100px;
+				background-color: red;
+			}
+			/*flex-direction:row*/
+			.first{
+				position: absolute;
+				top:0;
+				flex-wrap: nowrap;
+				background-color: #00C78C;
+			}
+			/*flex-direction:row-reverse*/
+			.second{
+				position: absolute;
+				top:300px;
+				flex-wrap: wrap;
+				background-color: #9933FA;
+			}
+			/*flex-direction:column*/
+			.third{
+				position: absolute;
+				top:600px;
+				flex-wrap: wrap-reverse;
+				background-color: #A020F0;
+			}
+		</style>
+	</head>
+	<body>
+		<!--flex-wrap:normal-->
+		<div class="box first">
+			<div class="item">i am first item</div>
+			<div class="item">i am second item</div>
+			<div class="item">i am third item</div>
+		</div>
+		<!--flex-wrap:wrap-->
+		<div class="box second">
+			<div class="item">i am first item</div>
+			<div class="item">i am second item</div>
+			<div class="item">i am third item</div>
+		</div>
+		<!--flex-wrap；wrap-reverse-->
+		<div class="box third">
+			<div class="item">i am first item</div>
+			<div class="item">i am second item</div>
+			<div class="item">i am third item</div>
+		</div>
+
+	</body>
+</html>
